@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   <header>
+    <div class="content flex_space">
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="navlinks">
+            <ul id="menulist">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="SERVICES.html">services</a></li>              
+                <li><a class="current" href="GALLERY.html">gallery</a></li>
+                <li><a href="CONTACT US.html">contact</a></li>
+                <li><a href="feedback.html">feedback</a></li>
+                <li><i class="bi bi-search"></i></li>
+                <li><button class="primary-btn" onclick="location.href='login.html'">LOGIN</button></li>
+            </ul>
+            <div class="menu">
+            <i class="bi bi-list" onclick="menutoggle()"></i>
+        </div>
+        </div>
+    </div>
+   </header> 
+
+   <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px"; 
+
+    function menutoggle(){
+if (menulist.style.maxHeight == "0px") {
+    menulist.style.maxHeight = "100vh";
+}
+else{
+    menulist.style.maxHeight = "0px";
+}
+    }
+   </script>
+
+
+<h1>GALLERY</h1>
+<style>
+    h1{ 
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    size: 100%;
+    background-color:#57b326;
+    padding-bottom: 10px;
+    display:block;
+    margin: auto;
+    size: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.gallery{
+    align-items: center;
+    
+    transform: translate(150px,-5px);
+}
+@media only screen and (max-width:768px){
+    .gallery{
+        align-items: center;
+        transform: translate(150px,-5px);
+    }
+}
+</style>
+
+<tr align="center">
+<div class="gallery">
+<a href="IMAGES/1.jpg"><img src="IMAGES/1.jpg" height="240" width="400"></a>
+<a href="IMAGES/1.jpg"><img src="IMAGES/2.jpg" height="240" width="400"></a>
+<a href="IMAGES/1.jpg"><img src="IMAGES/3.jpg" height="240" width="400"></a>
+<a href="IMAGES/4.jpg"><img src="IMAGES/4.jpg" height="240" width="400"></a>
+<a href="IMAGES/5.jpg"><img src="IMAGES/5.jpg" height="240" width="400"></a>
+<a href="IMAGES/6.jpg"><img src="IMAGES/6.jpg" height="240" width="400"></a>
+<a href="IMAGES/7.jpg"><img src="IMAGES/7.jpg" height="240" width="400"></a>
+<a href="IMAGES/8.jpg"><img src="IMAGES/8.jpg" height="240" width="400"></a>
+<a href="IMAGES/9.jpg"><img src="IMAGES/9.jpg" height="240" width="400"></a>
+</div>
+</tr>
+
+<footer>
+    <div class="container grid">
+        <div class="box">
+            <img src="image/logo3.png" alt="">
+            <h2>About</h2>
+            <p> FENIX offers ultimate comfort and luxury. 
+                This 4-stared hotel is a beautiful combination of traditional grandeur and 
+                modern facilities. The 255 exclusive guest rooms are furnished with a range of 
+                modern amenities such as television and internet access. International
+                 direct-dial phone and safe are also available in any of these rooms.
+                 Wake-up call facility is also available in these rooms.</p>
+            <br>
+                <div class="icon">
+                <a href=""><i class="bi bi-facebook"></a></i>
+                <a href=""><i class="bi bi-instagram"></a></i>
+                <a href=""><i class="bi bi-twitter"></a></i>
+                <a href=""><i class="bi bi-youtube"></a></i>
+            </div>      
+        </div>
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="">Company History</li></a>
+                <li><a href="about.html">About Us</li></a>
+                <li><a href="CONTACT US.html">Contact Us</li></a>
+                <li><a href="SERVICES.html">Services</li></a>
+                <li><a href="">Privacy policy</li></a>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+            </p><br>
+            <br><i class="bi bi-geo-alt-fill"></i>
+            <label><a href="">1201 park street, Avenue, Dhanmondy, Dhaka.</label></a><br> 
+            <br><i class="bi bi-telephone-fill"></i>
+            <label><a href="">[88] 657 524 332</label></a><br>
+            <br><i class="bi bi-envelope-fill"></i>
+            <label><a href="">info@dentar.com</label></a>
+            
+        </div>
+    </div>
+  </footer>
+  
+  <div class="legal">
+    <p class="container">Copyright (c) 2024 Copyright Holder All Rights Reserved.</p>
+  </div>
+</body>
+</html>
